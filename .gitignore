@@ -1,0 +1,14 @@
+*.egg-info
+build/
+.ipynb_checkpoints
+__pycache__/
+experiments/figures
+experiments/figures_final
+experiments/data_files
+experiments/model_results
+experiments/script_outputs
+experiments/lightning_logs
+*.sh
+*.out
+tmp/
+old/
