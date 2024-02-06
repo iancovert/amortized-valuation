@@ -1,0 +1,49 @@
+
+[project]
+name = "amortized-data-valuation"
+version = "0.0.1"
+description = "For amortizing data valuation with Data Shapley."
+readme = "README.md"
+license = {text = "MIT License"}
+authors = [
+    {name = "Ian Covert", email = "icovert@stanford.edu"},
+]
+
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "numpy",
+    "scipy",
+    "torchvision",
+    "scikit-learn",
+    "pytorch-lightning",
+]
+
+[project.optional-dependencies]
+
+experiments=[
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "torcheval",
+    "tqdm",
+    "opendataval",
+]
+
+[project.urls]
+Repository = "https://github.com/iancovert/amortized-valuation/"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["adv"]
